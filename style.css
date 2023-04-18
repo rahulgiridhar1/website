@@ -1,0 +1,902 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    background: rgb(17,2,4);
+  background: linear-gradient(90deg, rgba(17,2,4,1) 45%, rgba(255,255,255,1) 85%);
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  h1 {
+    font-family: Courier;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  li {
+    list-style-type: square;
+    color: #663e75; /* change color of bullet points */
+    font-weight: bold; /* make bullet points bold */
+    margin-bottom: 0.5em; /* add some bottom margin */
+  }
+  li {
+    list-style-type: disc; /* set the default bullet style */
+    margin-bottom: 0.5em;
+  }
+  
+  .skills1 {
+    
+    position: relative; /* set the position to relative so we can position the proficiency bar */
+  }
+  
+ 
+ 
+  
+ 
+  
+  
+  
+  .proficiency-bar {
+    position: absolute;
+    top: 53.5%; /* position the bar in the middle of the item */
+    left: 50%; /* position the bar to the right of the item */
+    width: 100px; /* set the width of the bar */
+    height: 10px; /* set the height of the bar */
+    background-color: #c58383; /* set the background color of the bar */
+    transform: translateY(-50%); /* vertically center the bar */
+    opacity: 0; /* hide the bar by default */
+    transition: opacity 0.3s ease-in-out; /* add a transition effect */
+  }
+  .proficiency-bar2 {
+    position: absolute;
+    top: 62%; /* position the bar in the middle of the item (was 57)*/
+    left: 50%; /* position the bar to the right of the item */
+    width: 100px; /* set the width of the bar */
+    height: 10px; /* set the height of the bar */
+    background-color: #c58383; /* set the background color of the bar */
+    transform: translateY(-50%); /* vertically center the bar */
+    opacity: 0; /* hide the bar by default */
+    transition: opacity 0.3s ease-in-out; /* add a transition effect */
+  }
+  .proficiency-bar3 {
+    position: absolute;
+    top: 65.5%; /* position the bar in the middle of the item */
+    left: 50%; /* position the bar to the right of the item */
+    width: 100px; /* set the width of the bar */
+    height: 10px; /* set the height of the bar */
+    background-color: #c58383; /* set the background color of the bar */
+    transform: translateY(-50%); /* vertically center the bar */
+    opacity: 0; /* hide the bar by default */
+    transition: opacity 0.3s ease-in-out; /* add a transition effect */
+  }
+  .proficiency-bar4 {
+    position: absolute;
+    top: 69%; /* position the bar in the middle of the item */
+    left: 50%; /* position the bar to the right of the item */
+    width: 100px; /* set the width of the bar */
+    height: 10px; /* set the height of the bar */
+    background-color: #c58383; /* set the background color of the bar */
+    transform: translateY(-50%); /* vertically center the bar */
+    opacity: 0; /* hide the bar by default */
+    transition: opacity 0.3s ease-in-out; /* add a transition effect */
+  }
+  
+
+  .skills1:hover .proficiency-bar {
+    opacity: 1; /* show the bar when hovering over the item */
+  }
+  .skills4:hover .proficiency-bar4 {
+    opacity: 1; /* show the bar when hovering over the item */
+  }
+  .skills2:hover .proficiency-bar2 {
+    opacity: 1; /* show the bar when hovering over the item */
+  }
+  .skills3:hover .proficiency-bar3 {
+    opacity: 1; /* show the bar when hovering over the item */
+  }
+  .proficiency-point {
+    position: absolute;
+    top: 5px; /* position the point above the bar */
+    left: calc(60% - 6px); /* position the point at the end of the bar */
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    background-color: #000000; /* set the color of the point */
+  }
+  li:hover .proficiency-point {
+    opacity: 1; /* show the point when hovering over the item */
+  }
+  .proficiency-point2 {
+    position: absolute;
+    top: 550px; /* position the point above the bar */
+    left: calc(54% - 6px); /* position the point at the end of the bar */
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    background-color: #000000; /* set the color of the point */
+  }
+  li:hover .proficiency-point2 {
+    opacity: 1; /* show the point when hovering over the item */
+  }
+  .proficiency-point3 {
+    position: absolute;
+    top: 575px; /* position the point above the bar */
+    left: calc(53% - 6px); /* position the point at the end of the bar */
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    background-color: #000000; /* set the color of the point */
+  }
+  li:hover .proficiency-point3 {
+    opacity: 1; /* show the point when hovering over the item */
+  }
+  .proficiency-point4 {
+    position: absolute;
+    top: 609px; /* position the point above the bar */
+    left: calc(52.5% - 6px); /* position the point at the end of the bar */
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    background-color: #000000; /* set the color of the point */
+  }
+  li:hover .proficiency-point4 {
+    opacity: 1; /* show the point when hovering over the item */
+  }
+  li:hover {
+    color: #ff6b6b; /* change color of bullet points on hover */
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 30%;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card img {
+    max-width: 100%;
+  }
+  .card1 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 30%;
+  }
+  
+  .card1 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card21 img {
+    max-width: 100%;
+  }
+  .card2 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 30%;
+  }
+  
+  .card2 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card2 img {
+    max-width: 100%;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Courier;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  /* Change the background color of the body */
+body {
+    background-color: #f1f1f1;
+  }
+  
+  /* Add a border and padding to the header */
+  header {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the navigation links */
+  nav a {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Add a hover effect to the navigation links */
+  nav a:hover {
+    color: #af1111;
+  }
+  body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 28px;
+  margin-top: 0;
+  font-family: Courier;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+.success-message {
+  color: #008000;
+  font-weight: bold;
+}
+
+  /* Add a background color and padding to the main content area */
+  main {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  .card:hover::before {
+    
+    content: "Goes through top 100 IMDb movies and returns information about a movie that the user enters.";
+    display: block;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    width: 298px;
+    height: 230px;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.5;
+    border: 2px solid #007bff;
+  }
+  .conta {
+    color:#f0f0f0;
+    
+  }
+  .card1:hover::before {
+   
+    content: "Given an input photo, program detects a person's face and crops the image to their face. Currently training it to recognise the person.";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 298px;
+    height: 230px;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.5;
+    border: 2px solid #007bff;
+  }
+  .typing-title {
+    overflow: hidden; /* Hides the overflow of the text */
+    white-space: nowrap; /* Prevents line breaks */
+    border-right: 0.15em solid #333; /* Creates a blinking cursor */
+    font-size: 36px; /* Sets the font size */
+    font-family: Arial, sans-serif; /* Sets the font family */
+    animation: typing 6s steps(20) forwards;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+    30% {
+      border-right-color: transparent; /* Hide the cursor */
+      animation: none; /* Remove the animation */
+    }
+    100% {
+      border-right-color: transparent; /* Hide the cursor */
+      animation: none; /* Remove the animation */
+    }
+  }
+  h1 {
+    overflow: hidden; /* Hides the overflow of the text */
+    white-space: nowrap; /* Prevents line breaks */
+    border-right: 0.15em solid #333; /* Creates a blinking cursor */
+    font-size: 36px; /* Sets the font size */
+    font-family: Arial, sans-serif; /* Sets the font family */
+    animation: typing 6s steps(20) forwards;
+  }
+  
+  .card2:hover::before {
+    
+    content: "Reads a map (matrix) and given a character with obstacles on the map, finds a destination using either a stack or queue. Outputs the path taken with backtracing.";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 298px;
+    height: 230px;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.5;
+    border: 2px solid #007bff;
+  }
+  /* Add a box shadow to the cards */
+  .card {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add a hover effect to the cards */
+  .card:hover {
+    box-shadow: 0 4px 4px rgba(196, 22, 22, 0.815);
+    transform: translateY(-5px);
+  }
+  .card1 {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add a hover effect to the cards */
+  .card1:hover {
+    box-shadow: 0 4px 4px rgba(196, 22, 22, 0.815);
+    transform: translateY(-5px);
+  }
+  .card2 {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add a hover effect to the cards */
+  .card2:hover {
+    box-shadow: 0 4px 4px rgba(196, 22, 22, 0.815);
+    transform: translateY(-5px);
+  }
+  
+  /* Style the footer text */
+  footer p {
+    font-size: 16px;
+  }
+  
+  /* Add a margin to the footer links */
+  footer a {
+    margin-right: 20px;
+  }
+  
+  /* Add a hover effect to the footer links */
+  footer a:hover {
+    color: #af1111;
+  }
+
+  /* Add some margin and padding to the main content area */
+main {
+  margin: 20px auto;
+  max-width: 960px;
+  padding: 40px;
+}
+
+/* Style the headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Courier;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Style the main heading */
+h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Courier;
+}
+
+/* Style the subheadings */
+h2, h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Style the paragraphs */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Add some padding and margin to the project cards */
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add a hover effect to the project cards */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(190, 19, 19, 0.795);
+}
+
+/* Style the project card image */
+.project-card img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Style the project card title */
+.project-card h3 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Style the project card description */
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* Style the project card link */
+.project-card a {
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Add a hover effect to the project card link */
+.project-card a:hover {
+  background-color: #af1111;
+}
+
+/* Style the navigation menu */
+nav {
+  background: rgb(17,2,4);
+  background: linear-gradient(90deg, rgba(17,2,4,1) 45%, rgba(255,255,255,1) 85%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+
+/* Style the navigation links */
+nav a {
+  display: flex;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Add a hover effect to the navigation links */
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* Style the logo */
+.logo {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Add a background image to the main section */
+main {
+  background-image: url('your-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Style the section headings */
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Style the section paragraphs */
+section p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the footer links */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Add a hover effect to the footer links */
+footer a:hover {
+  opacity: 0.7;
+}
+
+/* Add a gradient background to the navigation menu */
+nav {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Add a shadow to the navigation menu */
+
+/* Add a pulsating effect to the logo */
+.logo {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Add a hover effect to the section headings */
+section h2:hover {
+  color: #af1111;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Add a rotating effect to the images */
+section img:hover {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add a blinking effect to the footer text */
+
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+button {
+background-color: #555;
+}
+button:hover {
+  background-color: #000;
+  transform: scale(1.1);
+}
+/* Set a maximum width for the main content area */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.one {
+  color: #ffffff;
+  font-weight: bold; /* change the color of the link on hover */
+  text-decoration: none;
+  padding: 5px;
+  background-color: #000000
+}
+.one:hover {
+  color:rgba(190, 19, 19, 0.795)
+}
+.two {
+  color: #ffffff;
+  font-weight: bold; /* change the color of the link on hover */
+  text-decoration: none;
+  padding: 5px;
+  background-color: #000000
+}
+.two:hover {
+  color:rgba(190, 19, 19, 0.795)
+}
+.feat {
+    color: white;
+    text-shadow: 1px 1px 0 #000, 
+               -1px 1px 0 #000, 
+               1px -1px 0 #000, 
+               -1px -1px 0 #000;
+
+}
+/* Add a subtle box shadow to the section boxes */
+section {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Add a hover effect to the project cards */
+.project-card:hover {
+  box-shadow: 0px 2px 5px rgba(214, 37, 37, 0.74);
+  transform: translateY(-5px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Add a subtle background pattern to the footer */
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  background-image: url('pattern.png');
+  background-repeat: repeat;
+}
+
+/* Add a subtle animation to the navigation links */
+nav a {
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+/* Add a hover effect to the project images */
+.project-image:hover {
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Add a box shadow and border radius to the project images */
+.project-image {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Add a subtle gradient to the project cards */
+.project-card {
+  background: linear-gradient(to bottom, #fff, #f0f0f0);
+}
+
+/* Add a hover effect to the project card titles */
+.project-card h3:hover {
+  color: #af1111;
+  transform: translateY(-3px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Add a border radius to the project card titles */
+.project-card h3 {
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  margin: 0;
+}
+
+/* Add a subtle background color to the navigation links */
+
+
+nav a:hover {
+ 
+  color: #fff;
+  transform: translateY(-3px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Add a subtle box shadow and border radius to the buttons */
+.btn {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-3px);
+  transition: all 0.2s ease-in-out;
+}
+.nav {
+  font-family: Courier;
+}
+/* Add a subtle background color to the main headings */
+
+
+
+
+
+
+  
+  
