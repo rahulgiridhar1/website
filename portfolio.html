@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Portfolio</title>
 	<meta charset="UTF-8">
-	<title><TT>other cool things</TT></title>
+	
     <link rel="stylesheet" type="text/css" href="style.css">
     <div class="nav-button">
         
         <nav>
         <ul>
-          <li><a href="web.html">Home</a></li>
-          <li><a href="another.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <a href="web.html">Home</a>
+          <a href="another.html">About me</a>
+        
+          <a href="contact.html">Contact</a>
         </ul>
     </nav>
       </div>
-     ]
+     
       
       
 	<style>
@@ -116,16 +117,24 @@
 			cursor: pointer;
 		}
 	</style>
+	<style>
+		body {
+		  background-color: white;
+		  background-size: cover;
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		}
+	  </style>
 </head>
 <body>
-	<h1>welcome to my fun page</h1>
+	<h1 class = "typing-title"><TT>welcome to my fun page</TT></h1>
 	
-	<h2>other cool things</h2>
+	
 	<div id="cool-feature-1">
         <p>my article on priority queues (OpenGenus)</p>
-        <form action = "https://iq.opengenus.org/delete-elements-in-priority-queue-cpp/">
+        
 		
-        <button type = "submit">click me!</button>
+        <button type = "submit" onclick = "window.open('https://iq.opengenus.org/delete-elements-in-priority-queue-cpp/','_blank')">click me!</button>
         </form>
 	</div>
 	
@@ -134,7 +143,7 @@
 	<div id="cool-feature-2">
 		
 		<p class = "feat">Isn't this photo amazing?</p>
-		<button>Learn More</button>
+		<button ><a class = "help" href = "stopit.html">Learn More</a></button>
 	</div>
 
 	
