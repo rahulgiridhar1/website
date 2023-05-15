@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <title>My Personal Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        background-color: white;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
   <body>
     <header>
       <nav>
         <ul style = "text-align: center;">
           
-          <li><a href="another.html">About Me</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
+          <a href="another.html">About Me</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact Me</a>
         </ul>
       </nav>
     </header>
     <main>
       <h1 class="typing-title"><TT>hi, I'm Rahul</TT></h1>
       <p style = "text-align: center; font-family: Courier;">made with</p>
+      <center>
+        <img class = "hltm" src = "https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg" height = "200" width = "310"/>
+      </center>
       
-      <img src = "https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg" alt = "html and css logos" width = "100" height = "100" style = "position:relative; right: -430px; top: -22px">
+      
+      <div class = "git">
+        <button type = "submit" onclick = "window.open('https://github.com/rahulgiridhar1','_blank')" class = "gitbut" target = "_blank">
+          my github
+          <i class="fa fa-github" style = "font-size:38px"></i>
+        </button>
+      </div>
       <p style = "text-align:left; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">some projects</p>
-     
       <div class="grid">
         <div class="card">
           <h2>Web Scraper (C++)</h2>
@@ -30,12 +48,12 @@
           
         </div>
         <div class="card1">
-          <h2>Facial Recognition</h2>
+          <h2>Facial Recognition (C++)</h2>
           
           
         </div>
         <div class="card2">
-          <h2>Routing Schemes</h2>
+          <h2>Routing Schemes (C++)</h2>
           
           
         </div>
