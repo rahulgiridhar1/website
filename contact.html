@@ -1,77 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Contact</title>
   <meta charset="UTF-8">
   <title class = conta><TT>contact me</TT></title>
   <link rel="stylesheet" href="style.css">
-  
+  <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    body {
-      background-image: url('https://img2.wallspic.com/crops/2/2/0/7/2/127022/127022-daytime-skyscraper-horizon-sky-skyline-1920x1080.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
+    
   </style>
 </head>
 <body>
     <div class="nav-button">
         <nav>
         <ul>
-          <li><a href="web.html">Home</a></li>
-          <li><a href="another.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <a href="web.html">Home</a>
+          <a href="another.html">About me</a>
+          <a href="portfolio.html">Portfolio</a>
+          
         </ul>
     </nav>
     
     </div>
-  <h1>contact me</h1>
+  <h1 class = "typing-title"><TT>contact me</TT></h1>
   <body>
     
-    <p>
-        <a  href="rahulgiridhar21@gmail.com" class = "one">Email</a>
-        <img src = "https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt = "gmail" width = "20" height = "20" style = "margin-top: 20px;">
-    </p>
-    <p>
-        <a href="https://www.linkedin.com/in/rahul-giridhar123/" class = "two">LinkedIn</a>
-        <img src = "https://upload.wikimedia.org/wikipedia/commons/c/ce/Linkedin_circle.svg" alt = "LinkedIn" width = "20" height = "20" style = "margin-top: 20px;">
+    <i class="fa fa-github" style = "font-size:44px" onclick = "window.open('https://github.com/rahulgiridhar1','_blank')"></i>
+        
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/c/ce/Linkedin_circle.svg" onclick = "window.open('https://www.linkedin.com/in/rahul-giridhar123/','_blank')" class = "LinkedIn" width = "40" height = "40" style = "margin-top: 20px;">
         
     </body>
   </div>
   <style>
-    .icon {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-right: 10px;
-        vertical-align: middle;
+    
 
-    }
 
-    .one {
-        background-image: url('https://cdn.icon-icons.com/icons2/37/PNG/512/gmail_socialnetwork_37205.png');
-    }
-
-    .two {
-        background-image: url('https://cdn.icon-icons.com/icons2/37/PNG/512/linkedin_socialnetwork_37214.png');
-    }
+    
 </style>
 </head>
-  <form method="post" action="<process.php>">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name">
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-    
-    <label for="phone">Phone:</label>
-    <input type="tel" id="phone" name="phone">
-    
-    <input type="submit" value="Submit">
-  </form>
+
+  <form class = "contactme" action="https://formsubmit.co/rahulgiridhar21@gmail.com" method="POST">
+    <label>Name</label>
+    <input type="text" name="name" required>
+    <label>Email</label>
+    <input type="email" name="email" required>
+    <label>Phone (optional)</label>
+    <input type="number" name="Phone" >
+    <label>Message (optional)</label>
+    <input type="text" name="Message">
+    <button class = "submit" type="submit">Submit</button>
+  </form> 
+
 </body>
 </html>
 
