@@ -6,9 +6,9 @@ body {
   
   header {
 
-    color: #fff;
+    
     padding: 10px;
-    background: lightslategray;
+    background: black;
     
   }
   
@@ -38,143 +38,91 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  li {
-    list-style-type: square;
-    color: #663e75; /* change color of bullet points */
-    font-weight: bold; /* make bullet points bold */
-    margin-bottom: 0.5em; /* add some bottom margin */
-  }
+ 
   li {
     list-style-type: disc; /* set the default bullet style */
     margin-bottom: 0.5em;
   }
   
+  .personal {
+    font-family: 'Courier New', Courier, monospace;
+  }
   .skills1 {
-    
-    position: relative; /* set the position to relative so we can position the proficiency bar */
-  }
-  
- 
- 
-  
- 
-  
-  
-  
-  .proficiency-bar {
-    position: absolute;
-    top: 53.5%; /* position the bar in the middle of the item */
-    left: 50%; /* position the bar to the right of the item */
-    width: 100px; /* set the width of the bar */
-    height: 10px; /* set the height of the bar */
-    background-color: #c58383; /* set the background color of the bar */
-    transform: translateY(-50%); /* vertically center the bar */
-    opacity: 0; /* hide the bar by default */
-    transition: opacity 0.3s ease-in-out; /* add a transition effect */
-  }
-  .proficiency-bar2 {
-    position: absolute;
-    top: 62%; /* position the bar in the middle of the item (was 57)*/
-    left: 50%; /* position the bar to the right of the item */
-    width: 100px; /* set the width of the bar */
-    height: 10px; /* set the height of the bar */
-    background-color: #c58383; /* set the background color of the bar */
-    transform: translateY(-50%); /* vertically center the bar */
-    opacity: 0; /* hide the bar by default */
-    transition: opacity 0.3s ease-in-out; /* add a transition effect */
-  }
-  .proficiency-bar3 {
-    position: absolute;
-    top: 65.5%; /* position the bar in the middle of the item */
-    left: 50%; /* position the bar to the right of the item */
-    width: 100px; /* set the width of the bar */
-    height: 10px; /* set the height of the bar */
-    background-color: #c58383; /* set the background color of the bar */
-    transform: translateY(-50%); /* vertically center the bar */
-    opacity: 0; /* hide the bar by default */
-    transition: opacity 0.3s ease-in-out; /* add a transition effect */
-  }
-  .proficiency-bar4 {
-    position: absolute;
-    top: 69%; /* position the bar in the middle of the item */
-    left: 50%; /* position the bar to the right of the item */
-    width: 100px; /* set the width of the bar */
-    height: 10px; /* set the height of the bar */
-    background-color: #c58383; /* set the background color of the bar */
-    transform: translateY(-50%); /* vertically center the bar */
-    opacity: 0; /* hide the bar by default */
-    transition: opacity 0.3s ease-in-out; /* add a transition effect */
-  }
-  
 
-  .skills1:hover .proficiency-bar {
-    opacity: 1; /* show the bar when hovering over the item */
   }
-  .skills4:hover .proficiency-bar4 {
-    opacity: 1; /* show the bar when hovering over the item */
-  }
-  .skills2:hover .proficiency-bar2 {
-    opacity: 1; /* show the bar when hovering over the item */
-  }
-  .skills3:hover .proficiency-bar3 {
-    opacity: 1; /* show the bar when hovering over the item */
-  }
-  .proficiency-point {
-    position: absolute;
-    top: 5px; /* position the point above the bar */
-    left: calc(60% - 6px); /* position the point at the end of the bar */
-    width: 12px;
-    height: 12px;
-    border-radius: 3px;
-    opacity: 0;
-    background-color: #000000; /* set the color of the point */
-  }
-  li:hover .proficiency-point {
-    opacity: 1; /* show the point when hovering over the item */
-  }
-  .proficiency-point2 {
-    position: absolute;
-    top: 550px; /* position the point above the bar */
-    left: calc(54% - 6px); /* position the point at the end of the bar */
-    width: 12px;
-    height: 12px;
-    border-radius: 3px;
-    opacity: 0;
-    background-color: #000000; /* set the color of the point */
-  }
-  li:hover .proficiency-point2 {
-    opacity: 1; /* show the point when hovering over the item */
-  }
-  .proficiency-point3 {
-    position: absolute;
-    top: 575px; /* position the point above the bar */
-    left: calc(53% - 6px); /* position the point at the end of the bar */
-    width: 12px;
-    height: 12px;
-    border-radius: 3px;
-    opacity: 0;
-    background-color: #000000; /* set the color of the point */
-  }
-  li:hover .proficiency-point3 {
-    opacity: 1; /* show the point when hovering over the item */
-  }
-  .proficiency-point4 {
-    position: absolute;
-    top: 609px; /* position the point above the bar */
-    left: calc(52.5% - 6px); /* position the point at the end of the bar */
-    width: 12px;
-    height: 12px;
-    border-radius: 3px;
-    opacity: 0;
-    background-color: #000000; /* set the color of the point */
-  }
-  li:hover .proficiency-point4 {
-    opacity: 1; /* show the point when hovering over the item */
-  }
-  li:hover {
-    color: #ff6b6b; /* change color of bullet points on hover */
-  }
- 
+  .proficiency-bar {
+  
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+  
+ }
+ h2 {
+  text-align: center;
+ }
+ .firstim {
+  
+  width: 50%;
+  height: 50%;
+  border: 3px solid black;
+ }
+ .pictures {
+  position: relative;
+  top: -1400px;
+  font: caption;
+  font-size: medium;
+  text-align: center;
+ }
+ .picline {
+  border-top: 1px solid #969696;
+  //margin-left: -50px;
+  width: 350px;
+  margin-top: -1351px;
+ }
+ .projectstyle {
+  font-family: 'Courier New', Courier, monospace;
+ }
+ .parkinsons {
+  cursor: pointer;
+  font-size: x-large;
+  text-align: center;
+
+ }
+ .parkinsons:hover {
+  text-decoration: underline;
+ }
+ .secondim {
+  width: 50%;
+  height: 384px;
+  position: relative;
+  right: -51%;
+  top:-1015px;
+  border: 3px solid black;
+ }
+ .points {
+  color: black;
+ }
+ .picline1 {
+  position: relative;
+  width: 350px;
+  border-top: 1px solid #969696;
+  
+ }
+ .secondim1 {
+  width: 50%;
+  height: 606px;
+  position: relative;
+  right: -51%;
+  top:-1015px;
+  border: 3px solid black;
+ }
+ .secondim2 {
+  width: 50%;
+  height: 418px;
+  position: relative;
+  right: -51%;
+  top:-1445px;
+  border: 3px solid black;
+ }
   
   .card {
     background-color: #fff;
@@ -296,10 +244,7 @@ body {
 
   
   /* Add a border and padding to the header */
-  header {
-    border-bottom: 1px solid #ccc;
-    padding: 20px;
-  }
+ 
   
   /* Style the navigation links */
   nav a {
@@ -309,9 +254,7 @@ body {
   }
   
   /* Add a hover effect to the navigation links */
-  nav a:hover {
-    color: #af1111;
-  }
+  
   body {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -403,13 +346,17 @@ input[type="tel"] {
   text-decoration-color: #000;
   border-color: #000;
   border-radius: 10%;
-  bottom: 19%;
+  bottom: 21%;
   left: 18%;
   position: absolute;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 1.5%;
   font-size: medium;
   
+}
+.tr:hover {
+  color:red;
+  cursor: pointer;
 }
 .gitbut:hover {
   background-color: white;
@@ -419,7 +366,7 @@ input[type="tel"] {
 }
 
   .card:hover::before {
-    
+   
     content: "Goes through top 100 IMDb movies and returns information about a movie that the user enters.";
     display: block;
     position: absolute;
@@ -443,6 +390,13 @@ input[type="tel"] {
   .conta {
     color:#f0f0f0;
     
+  }
+  .firstim1 {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    border: 3px solid black;
+    top: -1014px;
   }
   .card1:hover::before {
    
@@ -654,14 +608,7 @@ p {
 }
 
 /* Style the navigation menu */
-nav {
-  background: lightslategrey;
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
+
 
 
 /* Style the navigation links */
@@ -757,17 +704,52 @@ nav {
     transform: scale(1);
   }
 }
-
-/* Add a hover effect to the section headings */
-section h2:hover {
-  color: #af1111;
-  transform: scale(1.05);
-  transition: all 0.2s ease-in-out;
+.portfolio:hover {
+  color: yellow;
 }
+/* Add a hover effect to the section headings */
+
 
 /* Add a rotating effect to the images */
-section img:hover {
-  animation: rotate 2s linear infinite;
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.5s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card1 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.5s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card2 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.5s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.pic1 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.pic1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 @keyframes rotate {
@@ -837,11 +819,7 @@ button:hover {
 
 
 /* Add a hover effect to the project cards */
-.project-card:hover {
-  box-shadow: 0px 2px 5px rgba(214, 37, 37, 0.74);
-  transform: translateY(-5px);
-  transition: all 0.2s ease-in-out;
-}
+
 
 /* Add a subtle background pattern to the footer */
 footer {
@@ -893,7 +871,15 @@ nav a {
 
 /* Add a subtle background color to the navigation links */
 
-
+.aboutme:hover {
+  color: red;
+}
+.contact:hover {
+  color: lightblue;
+}
+.home:hover {
+  color: green;
+}
 nav a:hover {
  
   color: black;
