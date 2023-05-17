@@ -6,15 +6,16 @@
 	
     <link rel="stylesheet" type="text/css" href="style.css">
     <div class="nav-button">
-        
+        <header>
         <nav>
-        <ul>
-          <a href="web.html">Home</a>
-          <a href="another.html">About me</a>
+        	<ul>
+          <a class = "home" href="web.html">Home</a>
+          <a class = "aboutme" href="another.html">About me</a>
         
-          <a href="contact.html">Contact</a>
+          <a class = "contact"href="contact.html">Contact</a>
         </ul>
     </nav>
+</header>
       </div>
      
       
@@ -23,6 +24,7 @@
 		body {
 			font-family: Arial, sans-serif;
 			background-color: #f1f1f1;
+			color: white;
 		}
 		
 		h1 {
@@ -76,47 +78,7 @@
 			text-align: center;
 		}
 		
-		#cool-feature-3 {
-			background-color: #ffffff;
-			color: #fff;
-			text-align: center;
-			padding: 50px 0;
-			margin: 50px 0;
-			position: relative;
-		}
 		
-		#cool-feature-3:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(255, 255, 255, 0.3);
-			z-index: -1;
-		}
-		
-		#cool-feature-4 {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			margin-top: 50px;
-		}
-		
-		#cool-feature-4 img {
-			width: 200px;
-			height: 200px;
-			object-fit: cover;
-			margin: 20px;
-			transition: transform 0.3s ease;
-		}
-		
-		#cool-feature-4 img:hover {
-			transform: scale(1.2);
-			cursor: pointer;
-		}
-	</style>
 	<style>
 		body {
 		  background-color: white;
@@ -127,7 +89,7 @@
 	  </style>
 </head>
 <body>
-	<h1 class = "typing-title"><TT>welcome to my fun page</TT></h1>
+	<h1 class = "typing-title"><TT>my portfolio</TT></h1>
 	
 	
 	<div id="cool-feature-1">
@@ -140,11 +102,36 @@
 	
    
 	
-	<div id="cool-feature-2">
-		
-		<p class = "feat">Isn't this photo amazing?</p>
-		<button ><a class = "help" href = "stopit.html">Learn More</a></button>
+
+	<div class = "illustrations">
+	<h2>Illustrations</h2>
+	<div class = "pic1">
+		<img class = "firstim" src="IMG-8112.jpg" alt="">
 	</div>
+	<img class = "firstim" src="IMG-8111.jpg" alt="">
+	<img class = "secondim" src="IMG-8113.jpg" alt="">
+	<img class = "secondim1" src="IMG-8114.jpg" alt="">
+	<img class = "firstim1" src="IMG-8115.jpg" alt="">
+	<img class = "secondim2" src="IMG-8116.jpg" alt="">
+	<h3 class = "pictures">Left to right, top to bottom: Beauty of Travelling, Kakashi, Wolverine in da Snow, American Psycho, A$AP Rocky, Leonardo DiCaprio</h3>
+</div>
+<hr class = "picline">
+<div class = "otherprojects">
+	<h3 class = "projectstyle" style = "margin-left: 2%">other coding projects</h3>
+	<ul class = "points">
+		<li>Euchre</li>
+		<li>ML model to detect what category a certain post should fall under</li>
+		<li>Database "behind the scenes" functions</li>
+		<li>Image manipulation (scaling)</li>
+		<li>Zombie survival simulation</li>
+		<li>Finding MST (with Prims and Kruskals algorithms) and optimal solution to TSP problem</li>
+	</ul>
+	<hr class = "picline1" style = "margin-top: 7%">
+
+</div>
+<h3 class = "projectstyle" style = "margin-left: 2%;margin-top:50px">my biotechnology team project on Parkinson's Disease</h3>
+<h4 class = "parkinsons" style = "margin-top:400px;" onclick = "window.open('https://docs.google.com/presentation/d/1H8VMyPJFVQKcE_IP-i1g0kLfEG61NPwUxm09alEqFmE/edit?usp=sharing')">Link to my project</h4>
+
 
 	
 
