@@ -8,11 +8,12 @@
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       body {
-        background-color: white;
+        background-color: black;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
+      
     </style>
   </head>
   <body>
@@ -20,29 +21,34 @@
       <nav>
         <ul style = "text-align: center;">
           
-          <a href="another.html">About Me</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="contact.html">Contact Me</a>
+          <a class = "aboutme" href="another.html">About Me</a>
+          <a class = "portfolio" href="portfolio.html">Portfolio</a>
+          <a class = "contact" href="contact.html">Contact Me</a>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1 class="typing-title"><TT>hi, I'm Rahul</TT></h1>
-      <p style = "text-align: center; font-family: Courier;">made with</p>
+    
+      <h1 style = "color:white" class="typing-title"><TT>hi, I'm Rahul</TT></h1>
+      <hr class = picline1>
+      <p style = "text-align: center; font-family: Courier; color: white; top: 100px">made with</p>
       <center>
         <img class = "hltm" src = "https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg" height = "200" width = "310"/>
       </center>
       
-      
+      <h4 style = "color: white; margin-left: 125px; top: -30px;">I love art and programming! <br> I have experience as a graphic designer 
+        <br> for a student-led game development club</h4>
+        <h4 class = "resume" style  = "margin-left: 125px; top: -40px" onclick = "window.open('https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:2ac7f016-3653-3a9e-8525-8594d2308f1a')"> Link to my resume</h4>
       <div class = "git">
+        <p style = "text-align:left; margin-left: 216px; margin-top: 146px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: white">some projects</p>
         <button type = "submit" onclick = "window.open('https://github.com/rahulgiridhar1','_blank')" class = "gitbut" target = "_blank">
           my github
           <i class="fa fa-github" style = "font-size:38px"></i>
         </button>
-      </div>
-      <p style = "text-align:left; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">some projects</p>
+      
+      
+    </div>
       <div class="grid">
-        <div class="card">
+        <div  class="card">
           <h2>Web Scraper (C++)</h2>
           
           
@@ -57,8 +63,47 @@
           
           
         </div>
+      
+       <hr class = "picline1">
       </div>
-    </main>
+      <div class = "experience">
+        <div style = "color:black;">Other work experience</div>
+        <ul style = "color: black">
+          <h4 style = "color: black; text-align: left;text-decoration: underline;">Kroger</h4>
+          <p style = "text-align: left; font-size: x-small;">June 2021 - August 2021</p>
+          <p style = "text-align: left; font-size: small;">Helped check out customers at the register as well as greeted them; Learned customer service skills as well as how to operate the register.
+          </p>
+          <hr>
+          <h4 style = "color: black; text-align: left;text-decoration: underline;">Browndog</h4>
+          <p style = "text-align: left; font-size: x-small;">March 2021 - April 2021</p>
+          <p style = "text-align: left; font-size: small;">Greeted customers and helped serve ice-cream as well as meals; additionally operated as a cashier.
+          </p>
+          <hr>
+          <h4 style = "color: black; text-align: left;text-decoration: underline;">Tennis coach</h4>
+          <p style = "text-align: left; font-size: x-small;">June 2021 - July 2021</p>
+          <p style = "text-align: left; font-size: small;">Helped run a summer tennis camp preparing middle school kids for high school tennis; set up drills and exercises as well as ran private 1-1 lessons.</p>
+          <hr>
+          <h4 style = "color: black; text-align: left;text-decoration: underline;">Bath & Body Works</h4>
+          <p style = "text-align: left; font-size: x-small;">July 2022 - Sep 2021</p>
+          <p style = "text-align: left; font-size: small;">Greeted customers and helped answer questions about specific products and the store; unpacked shipment and stocked the store; worked as a cashier.
+          </p>
+          <hr>
+          <h4 style = "color: black; text-align: left;text-decoration: underline;">MDen</h4>
+          <p style = "text-align: left; font-size: x-small;">August 2022 - Dec 2022</p>
+          <p style = "text-align: left; font-size: small;">Made sure clothes were correctly organized by size; talked to customers and guided them around the store; helped unpack shipment and worked on inventory.
+          </p>
+        </ul>
+      </div>
+      <hr class = "picline1" style = "margin-top: 60px">
+      <footer>
+        <nav>
+          <ul style = "text-align: center;">
+            <li class = "footlink"  onclick = "window.open('https://www.linkedin.com/in/rahul-giridhar123/')">LinkedIn</li>
+            <li class = "footlink1"  onclick = "window.open('https://github.com/rahulgiridhar1')">GitHub</li>
+          </ul>
+        </nav>
+      </footer>
+    
     
   </body>
 </html>
