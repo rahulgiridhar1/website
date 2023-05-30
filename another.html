@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      background-color: white;
+      background-color: black;
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -18,69 +18,107 @@
   <header>
     <nav>
       <ul>
-        <a href="web.html">Home</a>
+        <a class = "home" href="web.html">Home</a>
         
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+        <a class = "portfolio" href="portfolio.html">Portfolio</a>
+        <a class = "contact" href="contact.html">Contact</a>
         
       </ul>
     </nav>
   </header>
   
-  <main>
+  
     <section class="hero1">
         
-      <h1 class="typing-title"><TT>about me</TT></h1>
-      
+      <h1 style = "color:white" class="typing-title"><TT>about me</TT></h1>
+      <hr class = picline1>
     </section>
     
     <section class="about">
-      <h2>Who I am</h2>
-      <p>My name is Rahul and I am currently an undergraduate student at the University of Michigan, Ann Arbor. I am majoring in Computer Science and am currently looking for internships!</p>
-    </section>
-    
-    <section class="skill">
-      <h2>My skills</h2>
-      <ul>
-        
-        <li class="skills1">C++ <div class="proficiency-bar"></div><div class="proficiency-point"></div></li>
-        <li class="skills2">Python <div class="proficiency-bar2"></div></div><div class="proficiency-point2"></div></li>
-        <li class="skills3">HTML/CSS <div class="proficiency-bar3"></div></div><div class="proficiency-point3"></div></li>
-        <li class="skills4">SQL <div class="proficiency-bar4"></div></div><div class="proficiency-point4"></div></li>
-      </ul>
-    </section>
-    
-    <section class="interests">
-      <h2>Relevant courses taken</h2>
+      <h2 style = "color:white"class = "yes">Who I am</h2>
       <blockquote>
+      <p style = "color:white"class = "personal">My name is Rahul and I am currently an undergraduate student at the University of Michigan, Ann Arbor. I am majoring in Computer Science and am currently looking for internships!</p>
+      <p style = "font-weight: bold; color: white" class = "personal">
+        Incoming software engineering intern for a healthcare startup.
+      </p>
+    </blockquote>
+    </section>
+    <hr class = "picline2">
+    <section class="skill">
+      <h2 style = "color:white"class = "yes">My skills</h2>
+      <blockquote>
+      <ul style = "color:white">
         
-        <li>Discrete Mathematics</li>
-        <li>Algorithms & Data Structures</li>
-        <li>Statistics & Data Analysis</li>
-        <li>Computer Science Theory</li>
-        
+        <li>C++</li> <div class="container">
+          <div class="skills html">90%</div>
+        </div>
+        <li>Python</li> 
+        <div class="container">
+          <div class="skills css">80%</div>
+        </div>
+        <li>HTML/CSS</li> 
+        <div class="container">
+          <div class="skills js">65%</div>
+        </div>
+        <li>SQL</li> 
+        <div class="container">
+          <div class="skills php">60%</div>
+        </div>
+      
+
+
+
+
+
+
+
+      </ul>
+    </blockquote>
+    </section>
+    <hr class = "picline2">
+    <section class="interests">
+      <h2 style = "color:white" class = "yes">Relevant courses taken</h2>
+      <blockquote>
+        <ul style = "color:white">
+        <li class = "tr" onclick = "window.open('https://ece.engin.umich.edu/academics/course-information/course-descriptions/eecs-203/')">Discrete Mathematics</li>
+        <li class = "tr" onclick = "window.open('https://eecs281staff.github.io/eecs281.org/syllabus.html')">Algorithms & Data Structures</li>
+        <li class = "tr" onclick = "window.open('https://lsa.umich.edu/stats/undergraduate-students/statistics-courses.html')">Statistics & Data Analysis</li>
+        <li class = "tr" onclick = "window.open('https://eecs376.org/')">Computer Science Theory</li>
+        </ul>
       </blockquote>
       
       
     </section>
+    <hr class = "picline2">
     <section class="interests">
-        <h2>Interests</h2>
+        <h2 style = "color:white" class = "yes">Interests</h2>
         <blockquote>
-          
+          <ul style = "color:white">
           <li>Tennis</li>
           <li>Rocket League</li>
           <li>Working out</li>
-          <li>Movies</li>
-          
+          <li class = "movies"><a class = "movies" href = "movies.html">Movies</a></li>
+          </ul>
         </blockquote>
         
         
       </section>
      
-  </main>
   
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
  
-  
+  <footer>
+    <nav>
+      <ul style = "text-align: center;">
+        <li class = "footlink"  onclick = "window.open('https://www.linkedin.com/in/rahul-giridhar123/')">LinkedIn</li>
+        <li class = "footlink1"  onclick = "window.open('https://github.com/rahulgiridhar1')">GitHub</li>
+      </ul>
+    </nav>
+  </footer>
   
 </body>
 </html>
