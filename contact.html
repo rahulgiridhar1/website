@@ -7,22 +7,25 @@
   <link rel="stylesheet" href="style.css">
   <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    
+    body {background-color: black;}
   </style>
 </head>
 <body>
     <div class="nav-button">
+      <header>
         <nav>
         <ul>
-          <a href="web.html">Home</a>
-          <a href="another.html">About me</a>
-          <a href="portfolio.html">Portfolio</a>
+          <a class = "home" href="web.html">Home</a>
+          <a class = "aboutme" href="another.html">About me</a>
+          <a class = "portfolio" href="portfolio.html">Portfolio</a>
           
         </ul>
     </nav>
+  </header>
     
     </div>
-  <h1 class = "typing-title"><TT>contact me</TT></h1>
+  <h1 style = "color: white" class = "typing-title"><TT>contact me</TT></h1>
+  <hr class = picline1>
   <body>
     
     <i class="fa fa-github" style = "font-size:44px" onclick = "window.open('https://github.com/rahulgiridhar1','_blank')"></i>
@@ -49,8 +52,17 @@
     <label>Message (optional)</label>
     <input type="text" name="Message">
     <button class = "submit" type="submit">Submit</button>
-  </form> 
-
+  </form>
+  
+  
+  <footer>
+    <nav>
+      <ul style = "text-align: center;">
+        <li class = "footlink"  onclick = "window.open('https://www.linkedin.com/in/rahul-giridhar123/')">LinkedIn</li>
+        <li class = "footlink1"  onclick = "window.open('https://github.com/rahulgiridhar1')">GitHub</li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>
 
