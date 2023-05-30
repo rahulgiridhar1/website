@@ -5,18 +5,7 @@
 	<meta charset="UTF-8">
 	
     <link rel="stylesheet" type="text/css" href="style.css">
-    <div class="nav-button">
-        <header>
-        <nav>
-        	<ul>
-          <a class = "home" href="web.html">Home</a>
-          <a class = "aboutme" href="another.html">About me</a>
-        
-          <a class = "contact"href="contact.html">Contact</a>
-        </ul>
-    </nav>
-</header>
-      </div>
+   
      
       
       
@@ -44,7 +33,7 @@
 			margin-bottom: 20px;
 		}
 		button {
-  background-color: #1a201a; /* Green */
+  background-color: black; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -65,23 +54,12 @@
 		}
 		
 		
-		#cool-feature-2 {
-			background-image: url('https://source.unsplash.com/800x600/?nature');
-			background-size: cover;
-			height: 500px;
-            
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			color: #fff;
-			text-align: center;
-		}
 		
 		
+	</style>
 	<style>
 		body {
-		  background-color: white;
+		  background-color: black;
 		  background-size: cover;
 		  background-repeat: no-repeat;
 		  background-attachment: fixed;
@@ -89,49 +67,69 @@
 	  </style>
 </head>
 <body>
-	<h1 class = "typing-title"><TT>my portfolio</TT></h1>
+	<header>
+        <nav>
+        <ul>
+          <a class = "home" href="web.html">Home</a>
+          <a class = "aboutme" href="another.html">About me</a>
+        
+          <a class = "contact"href="contact.html">Contact</a>
+        </ul>
+    	</nav>
+	</header>
+	<h1 style = "color: white" class = "typing-title"><TT>my portfolio</TT></h1>
+	<hr class = picline1>
 	
-	
-	<div id="cool-feature-1">
-        <p>my article on priority queues (OpenGenus)</p>
+	<div style = "background-color: black" id ="cool-feature-1">
+        <p style = "color: white">my software articles (OpenGenus)</p>
         
 		
-        <button type = "submit" onclick = "window.open('https://iq.opengenus.org/delete-elements-in-priority-queue-cpp/','_blank')">click me!</button>
+        <button style = "background-color: white; color: black" type = "submit" onclick = "window.open('https://iq.opengenus.org/author/rahul-giridhar/','_blank')">click me!</button>
         </form>
 	</div>
 	
    
 	
 
-	<div class = "illustrations">
-	<h2>Illustrations</h2>
-	<div class = "pic1">
+	
+	<h2 style = "color: white">Illustrations</h2>
+	
 		<img class = "firstim" src="IMG-8112.jpg" alt="">
+	
+	<img class = "firstim" src="IMG-8111.jpg" alt="h">
+	<img class = "secondim" src="IMG-8113.jpg" alt="t">
+	<img class = "secondim1" src="IMG-8114.jpg" alt="r">
+	<img class = "firstim1" src="IMG-8115.jpg" alt="r">
+	<img class = "secondim2" src="IMG-8116.jpg" alt="g">
+	<div class = "movetext" style = "margin-top: -800px">
+		<h3 style = "color: white" class = "pictures">Left to right, top to bottom: Beauty of Travelling, Kakashi, Wolverine in da Snow, American Psycho, A$AP Rocky, Leonardo DiCaprio</h3>
+
+		<hr class = "picline">
+
+		<h3 class = "projectstyle" style = "margin-left: 2%;color: white">other coding projects</h3>
+		<ul style = "color: white" class = "points">
+			<li>Euchre</li>
+			<li>ML model to detect what category a certain post should fall under</li>
+			<li>Database "behind the scenes" functions</li>
+			<li>Image manipulation (scaling)</li>
+			<li>Zombie survival simulation</li>
+			<li>Finding MST (with Prims and Kruskals algorithms) and optimal solution to TSP problem</li>
+		</ul>
+		<hr class = "picline2" style = "margin-top: 7%">
+
+
+		<h3 class = "projectstyle" style = "margin-left: 2%;margin-top:50px;color: white">my biotechnology team project on Parkinson's Disease</h3>
+		<h4 class = "parkinsons" style = "margin-top:400px;color: white" onclick = "window.open('https://docs.google.com/presentation/d/1H8VMyPJFVQKcE_IP-i1g0kLfEG61NPwUxm09alEqFmE/edit?usp=sharing')">Link to my project</h4>
 	</div>
-	<img class = "firstim" src="IMG-8111.jpg" alt="">
-	<img class = "secondim" src="IMG-8113.jpg" alt="">
-	<img class = "secondim1" src="IMG-8114.jpg" alt="">
-	<img class = "firstim1" src="IMG-8115.jpg" alt="">
-	<img class = "secondim2" src="IMG-8116.jpg" alt="">
-	<h3 class = "pictures">Left to right, top to bottom: Beauty of Travelling, Kakashi, Wolverine in da Snow, American Psycho, A$AP Rocky, Leonardo DiCaprio</h3>
-</div>
-<hr class = "picline">
-<div class = "otherprojects">
-	<h3 class = "projectstyle" style = "margin-left: 2%">other coding projects</h3>
-	<ul class = "points">
-		<li>Euchre</li>
-		<li>ML model to detect what category a certain post should fall under</li>
-		<li>Database "behind the scenes" functions</li>
-		<li>Image manipulation (scaling)</li>
-		<li>Zombie survival simulation</li>
-		<li>Finding MST (with Prims and Kruskals algorithms) and optimal solution to TSP problem</li>
-	</ul>
-	<hr class = "picline1" style = "margin-top: 7%">
-
-</div>
-<h3 class = "projectstyle" style = "margin-left: 2%;margin-top:50px">my biotechnology team project on Parkinson's Disease</h3>
-<h4 class = "parkinsons" style = "margin-top:400px;" onclick = "window.open('https://docs.google.com/presentation/d/1H8VMyPJFVQKcE_IP-i1g0kLfEG61NPwUxm09alEqFmE/edit?usp=sharing')">Link to my project</h4>
-
-
+	<footer>
+        <nav>
+          <ul style = "text-align: center;">
+            <li class = "footlink"  onclick = "window.open('https://www.linkedin.com/in/rahul-giridhar123/')">LinkedIn</li>
+            <li class = "footlink1"  onclick = "window.open('https://github.com/rahulgiridhar1')">GitHub</li>
+          </ul>
+        </nav>
+      </footer>
+	</body>
+	</html>
 	
 
